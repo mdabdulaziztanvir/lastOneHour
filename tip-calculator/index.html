@@ -3,7 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./tip_calculator_styles.css" />
+    <title>Tip Calculator</title>
   </head>
-  <body></body>
+  <body>
+    <img src="./ballon.gif" id="successBallon" alt="ballon gif" />
+    <div class="container">
+      <h1>Tip Calculator</h1>
+      <p>Enter the bill amount and tip percentage to calculate the total.</p>
+      <form class="tips-form">
+        <label for="billAmmount">Bill amount:</label>
+        <input
+          id="billAmmount"
+          type="number"
+          placeholder="Total Bill Amount in Number"
+          min="0"
+          tabindex="1"
+          required
+        />
+        <label for="tipPercentage">Tip percentage:</label>
+        <input
+          id="tipPercentage"
+          type="number"
+          placeholder="ADD Tip percentage in Number"
+          min="0"
+          tabindex="2"
+          required
+        />
+        <button type="submit" id="tipCalculateButton" tabindex="3">
+          Calculate
+        </button>
+      </form>
+      <b>Total: <span id="calulatedTips"></span> </b>
+    </div>
+    <script src="./tipCalculatorMain.js"></script>
+  </body>
 </html>
