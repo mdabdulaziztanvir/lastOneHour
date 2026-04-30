@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  color: rgb(1, 147, 147);
+  text-decoration: underline;
+  text-underline-offset: 0.6rem;
+  margin-bottom: 2rem;
+}
+.container {
+  border: 1px solid;
+  margin-top: 2.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  box-sizing: content-box;
+  flex-direction: column;
+  max-width: 650px;
+  padding: 2rem 3rem;
+  gap: 1rem;
+}
+.tips-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+input {
+  height: 3rem;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  padding: 0px 0px 0px 10px;
+  outline: none;
+  border: 2px solid rgba(0, 128, 128, 0.3);
+}
+input:focus {
+  outline: none;
+  border: 2px solid rgba(0, 128, 128, 0.5);
+}
+button {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  padding: 1rem 0rem;
+  background-color: teal;
+  font: bold;
+  color: antiquewhite;
+  border: 2px solid rgba(0, 128, 128, 0.5);
+}
+button:hover {
+  background-color: rgb(1, 147, 147);
+  color: rgb(255, 235, 210);
+}
+button:active {
+  border: 2px solid rgba(152, 255, 255, 0.5);
+}
+#successBallon {
+  display: none;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}

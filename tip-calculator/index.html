@@ -3,36 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tip Calculator(Mint's)</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./tip_calculator_styles.css" />
+    <title>Tip Calculator</title>
   </head>
   <body>
-    <div id="calculator_box">
+    <img src="./ballon.gif" id="successBallon" alt="ballon gif" />
+    <div class="container">
       <h1>Tip Calculator</h1>
       <p>Enter the bill amount and tip percentage to calculate the total.</p>
-      <div class="input_item">
-        <label for="amount">Bill amount:</label>
-        <br />
+      <form class="tips-form">
+        <label for="billAmmount">Bill amount:</label>
         <input
-          id="bill_amount"
+          id="billAmmount"
           type="number"
-          placeholder="Enter your bill"
+          placeholder="Total Bill Amount in Number"
+          min="0"
+          tabindex="1"
           required
         />
-      </div>
-      <div class="input_item">
-        <label for="amount">Tip percentage:</label>
-        <br />
+        <label for="tipPercentage">Tip percentage:</label>
         <input
-          id="tip_percentage"
+          id="tipPercentage"
           type="number"
-          placeholder="Enter tip amount"
+          placeholder="ADD Tip percentage in Number"
+          min="0"
+          tabindex="2"
           required
         />
-      </div>
-      <button id="calculate_btn" onclick="myTipCalculator()">CALCULATE</button>
-      <p>Total: <span id="total_amount"></span></p>
+        <button type="submit" id="tipCalculateButton" tabindex="3">
+          Calculate
+        </button>
+      </form>
+      <b>Total: <span id="calulatedTips"></span> </b>
     </div>
-    <script src="./main.js"></script>
+    <script src="./tipCalculatorMain.js"></script>
   </body>
 </html>
