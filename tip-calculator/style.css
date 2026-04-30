@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 5rem;
+}
+#calculator_box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 3px 4px 5px 1px rgb(195, 195, 189);
+  padding: 2rem;
+  font-size: 18px;
+}
+#calculator_box h1 {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+.input_item {
+  margin: 1rem 0;
+}
+.input_item input {
+  width: 100%;
+  padding: 0.5rem 0;
+  margin-top: 0.2rem;
+}
+#calculate_btn {
+  background-color: #45a049;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0.5rem;
+  color: #ffffff;
+  width: 100%;
+}
+#total_amount {
+  font-size: 30px;
+  font-weight: bolder;
+}
