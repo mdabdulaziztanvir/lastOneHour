@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator(Mint's)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="calculator_box">
+      <h1>Tip Calculator</h1>
+      <p>Enter the bill amount and tip percentage to calculate the total.</p>
+      <div class="input_item">
+        <label for="amount">Bill amount:</label>
+        <br />
+        <input
+          id="bill_amount"
+          type="number"
+          placeholder="Enter your bill"
+          required
+        />
+      </div>
+      <div class="input_item">
+        <label for="amount">Tip percentage:</label>
+        <br />
+        <input
+          id="tip_percentage"
+          type="number"
+          placeholder="Enter tip amount"
+          required
+        />
+      </div>
+      <button id="calculate_btn" onclick="myTipCalculator()">CALCULATE</button>
+      <p>Total: <span id="total_amount"></span></p>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
