@@ -1,0 +1,61 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: linear-gradient(
+    90deg,
+    rgba(144, 237, 144, 1) 0%,
+
+    rgba(173, 216, 229, 1) 100%
+  );
+}
+header {
+  text-align: center;
+  font-size: 1.2rem;
+}
+header > * {
+  letter-spacing: 2px;
+  font: bold;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  /* margin-top: 5rem; */
+  padding: 50px;
+  gap: 40px;
+}
+.container-add-button {
+  padding-block: 4.3rem;
+  padding-inline: 6rem;
+  font-size: 4.5rem;
+  border-radius: 0.5rem;
+  outline: 2px solid white;
+  border: none;
+  color: #56605d;
+  font-weight: 900;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+.container-add-button:hover {
+  opacity: 0.8;
+}
+.createdTextAreaClass {
+  width: 280px;
+  height: 200px;
+  border-radius: 0.5rem;
+  border: none;
+  outline: 2px solid rgb(75, 202, 75);
+  box-shadow: -1px -1px 18px 0px rgba(148, 235, 156, 0.86);
+
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  /* background-color: #e5f2e6; */
+  background-color: transparent;
+
+  resize: none;
+}
+.createdTextAreaClass:hover {
+  box-shadow: -7px -7 18px 10px rgb(24, 37, 1);
+}
+.createdTextAreaClass::-webkit-scrollbar {
+  display: none;
+}
